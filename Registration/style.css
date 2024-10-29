@@ -1,0 +1,59 @@
+body{
+    background-image: url(https://i.pinimg.com/originals/84/ae/ae/84aeaec6b6e64730b07610a8474022ca.gif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.paragraph_text{
+    text-align: center;
+}
+
+#content-wrapper{
+    position: relative;
+    width: 35%;
+    height: 50%;
+    background: transparent;
+    align-items: center;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    padding: 45px;
+    margin: 160px auto;
+
+}
+
+#user-form{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid white;
+    background: transparent;
+}
+
+#submit-form{
+    border: 2px solid white;
+    border-radius: 20px;
+    outline: none;
+    background: transparent;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+h2{
+    text-align: center;
+}
+
+::placeholder{
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    padding: 10px;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
