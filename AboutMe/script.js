@@ -39,7 +39,7 @@ function getGreeting() {
     return greeting;
 }
 
-
+/*
 lightThemeBtn.addEventListener("click", function(e) {
     e.preventDefault();
     bodyElement.style.backgroundImage = lightBackground;
@@ -52,7 +52,44 @@ darkThemeBtn.addEventListener("click", function(e) {
     bodyElement.style.backgroundImage = darkBackground;
     bodyElement.style.color = "#fff";
 });
+*/
 
+document.addEventListener("DOMContentLoaded", function() {
+    const savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme === "dark") {
+        setDarkTheme();
+    } else {
+        setLightTheme();
+    }
+});
+
+// Function to set light theme
+function setLightTheme() {
+    bodyElement.classList.remove("dark-mode");
+    bodyElement.style.backgroundImage = lightBackground;
+    localStorage.setItem("theme", "light");
+    bodyElement.style.color = "#000";
+}
+
+// Function to set dark theme
+function setDarkTheme() {
+    bodyElement.classList.add("dark-mode");
+    bodyElement.style.backgroundImage = darkBackground;
+    localStorage.setItem("theme", "dark");
+    bodyElement.style.color = "#fff";
+}
+
+// Button event listeners
+lightThemeBtn.addEventListener("click", function(e) {
+    e.preventDefault();
+    setLightTheme();
+});
+
+darkThemeBtn.addEventListener("click", function(e) {
+    e.preventDefault();
+    setDarkTheme();
+});
 
 dateTimeBtn.addEventListener("click", function(e) {
     e.preventDefault();

@@ -1,7 +1,6 @@
 const form = document.getElementById('form');
 const result = document.getElementById('result');
 
-
 //object methods in js
 const person = {
     name : "Kazybek",
@@ -115,4 +114,4 @@ document.getElementById("playSoundBtn").addEventListener("click", function(event
   });
 
 
-//Animations
+
