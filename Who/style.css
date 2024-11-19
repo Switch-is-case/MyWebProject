@@ -11,15 +11,14 @@ body{
 
 #content-wrapper{
     position: relative;
-    width: 20%;
-    height: 50%;
+    width: 80%;
+    height: 100%;
     background: transparent;
-    align-items: center;
     border-radius: 20px;
     backdrop-filter: blur(15px);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    padding: 45px; 
-    margin: 160px auto;
+    padding: 10px;
+    margin: 10px auto;
 }
 
 #user-form{
@@ -61,4 +60,12 @@ option{
 }
 input{
     padding: 10px;
+}
+
+.myForm{
+    max-width: 230px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #fff;
+    cursor: pointer;
 }

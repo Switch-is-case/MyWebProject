@@ -10,28 +10,55 @@
     <title>Login & Registration Form</title>
   </head>
   <body>
-    <form class="col-sm-12 col-md-12 col-lg-12" id="content-wrapper" name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+    <header>
+      <nav id="content-wrapper">
+          <div class="navbar navbar-expand-lg">
+              <div class="container-fluid">
+                  <a class="navbar-brand">FAQs</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav ml-auto">
+                          <li class="nav-item">
+                              <a class="nav-link" href="index.html">My Portfolio</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="AboutMe.html">About Me</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </nav>
+  </header>
+    <form class="myForm" id="content-wrapper" name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
       <div class="column">
       <div>
         <h2 class="text-light">Registration</h2>
       </div>
       <label for="fname"></label>
       <input id="user-form" type="text" name="fname" placeholder="Name">
+      <br>
+      <br>
       <label for="email"></label>
       <input id="user-form" type="text" name="email" placeholder="Email">
       <br>
       <br>
       <label for="password"></label>
       <input id="user-form" type="password" name="pswd" placeholder="Password" onkeyup='check();'>
+      <br>
+      <br>
       <label for="password_confirm"></label>
       <input id="user-form" type="password" name="pswdcnf" placeholder="Password confirm" onkeyup='check();'>
       <br>
       <br>
-      <input id="submit-form" class="btn btn-outline-light btn-sm mx-2" type="submit" value="Register" style="width:400px; margin: 0px auto;">
+      <input id="submit-form" class="btn btn-outline-light btn-sm mx-2" type="submit" value="Register" style="width:200px; margin: 0px auto;">
       <br>
       <br>
       <div>
-        <p>Already have an account? <a href="LogIn.html">Sign In</a></p>
+        <p>Already have an account?</p>
+        <a href="LogIn.html">Sign In</a>
       </div>
       </div>
     </form>
